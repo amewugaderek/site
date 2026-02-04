@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HR Suggestion Portal | SuperTech Limited</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #f5a000;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.55),
+          rgba(0, 0, 0, 0.55)),
+        url("https://images.unsplash.com/photo-1581092160562-40aa08e78837");
+      background-size: cover;
+      background-position: center;
+      padding: 80px 20px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* Main */
+    main {
+      max-width: 900px;
+      background: #ffffff;
+      margin: -50px auto 50px;
+      padding: 40px;
+      border-radius: 4px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #111;
+      border-left: 4px solid #f5a000;
+      padding-left: 10px;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      margin-top: 6px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+
+    .optional {
+      font-weight: normal;
+      font-size: 12px;
+      color: #777;
+    }
+
+    button {
+      margin-top: 25px;
+      background-color: #f5a000;
+      color: #ffffff;
+      border: none;
+      padding: 14px 30px;
+      font-size: 15px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #d88c00;
+    }
+
+    .privacy {
+      margin-top: 30px;
+      background: #f0f0f0;
+      padding: 15px;
+      font-size: 13px;
+      border-left: 4px solid #f5a000;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="Christmas-Logo_Supertech.png" alt="SuperTech Limited Logo" href="https://phishinglearning.stlghana.com/">
+    <nav>
+      <a href="https://phishinglearning.stlghana.com/">Home</a>
+      <a href="https://phishinglearning.stlghana.com/">About Us</a>
+      <a href="https://phishinglearning.stlghana.com/">Solutions & Projects</a>
+      <a href="https://phishinglearning.stlghana.com/">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>HR Suggestion & Complaints Portal</h1>
+    <p>
+      As part of the quarterly employee review, SuperTech invites staff in
+      <strong>Field Installation</strong> and <strong>Low Voltage</strong> departments
+      to share their concerns and suggestions.
+    </p>
+  </section>
+
+  <main>
+    <h2>Submit Your Feedback</h2>
+
+    <form 
+    action="https://formspree.io/f/mojlzkvr"
+    method="POST" class="feedback-form" id="feedbackForm">
+    
+      <label>
+        Full Name <span class="required">(required)</span>
+      </label>
+      <input required type="text" minlength="7">
+
+      <label for="email">Company Email <span class="required">(required)</span></label>
+      <input required type="email" name="email" id="email">
+
+      <label>Department</label>
+      <select required>
+        <option value="">-- Select Department --</option>
+        <option>CSC</option>
+        <option>Cyber</option>
+        <option>NOC</option>
+        <option>Applications</option>
+        <option>Field Installation</option>
+        <option>Low Voltage</option>
+      </select>
+
+      <label>Submission Type</label>
+      <select required>
+        <option value="">-- Select --</option>
+        <option>Complaint</option>
+        <option>Suggestion</option>
+        <option>Both</option>
+      </select>
+
+      <label>Describe the problem(s) you face</label>
+      <textarea required></textarea>
+
+      <label>Your suggestions for improvement</label>
+      <textarea></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+
+    <div class="privacy">
+      <strong>Privacy Notice:</strong><br>
+      All submissions are confidential and reviewed only by the HR department.
+      Your feedback is important and will not be overlooked.
+    </div>
+  </main>
+
+  <footer>
+    © SuperTech Limited — HR Department
+  </footer>
+
+
+  <script>
+    document.getElementById(feedbackForm)
+  </script>
+
+</body>
+
+</html>
